@@ -4,7 +4,7 @@ Step-by-step instructions to install, launch and load PostgreSQL on Mac OS 10.3 
 #### If you don't have brew install
 [Install brew](https://brew.sh)
 
-#### If you have anaconda install
+#### If you don't have anaconda install
 [Install anaconda](https://www.anaconda.com/download/#macos)
 
 =================================
@@ -16,7 +16,7 @@ Step-by-step instructions to install, launch and load PostgreSQL on Mac OS 10.3 
 #### Verify that anaconda is installed 
 `anaconda --version`
 
-#### If not use the link [install anaconda](https://www.anaconda.com/download/#macos)
+#### If not, use the link [install anaconda](https://www.anaconda.com/download/#macos)
 
 ==================================
 #### Install the dependencies 
@@ -49,11 +49,11 @@ Step-by-step instructions to install, launch and load PostgreSQL on Mac OS 10.3 
 
 =================================
 #### Load and Execute SQL File
-`\i file_name.sql`
+`\i $file_name.sql`
 
 =================================
 #### OR THE PAST 2 COMMANDS IN 1
-`psql -f file_name.sql`
+`psql -f $file_name.sql`
 
 =================================
 #### Load Database (e.g CSV)

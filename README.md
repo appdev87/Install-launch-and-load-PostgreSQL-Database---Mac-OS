@@ -1,5 +1,5 @@
-# Install-launch-and-load-PostgreSQL-Database---Mac-OS
-Step-by-step instructions to install, launch and load PostgreSQL on Mac OS 10.3 or later
+# Install launch and load PostgreSQL Database Mac-OS
+Step-by-step instructions to install, launch and load PostgreSQL on Mac OS 10.3 or later and run it locally.
 
 =================================
 #### Install postgresql via brew 

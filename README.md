@@ -29,7 +29,7 @@ Step-by-step instructions to install, launch and load PostgreSQL on Mac OS 10.3 
 
 =================================
 #### cd directory
-`cd $PATH/TO/FILE`
+`cd $PATH/TO/Fdatabase_nameILE`
 
 =================================
 #### Launch PostgreSQL
@@ -57,11 +57,11 @@ Step-by-step instructions to install, launch and load PostgreSQL on Mac OS 10.3 
 
 =================================
 #### Load Database (e.g CSV)
-`COPY $database_name 
+`COPY $table_name 
 FROM "$PATH/TO/FILE/$file_name.csv" DELIMITER ',' CSV HEADER;`
 
 ##### IF THE ABOVE DOESN'T, THEN USE 
-`/COPY $database_name 
+`/COPY $ 
 FROM "$PATH/TO/FILE/$file_name.csv" DELIMITER ',' CSV HEADER;`
 
 =================================

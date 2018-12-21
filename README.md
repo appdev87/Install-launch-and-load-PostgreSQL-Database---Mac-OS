@@ -61,7 +61,7 @@ Step-by-step instructions to install, launch and load PostgreSQL on Mac OS 10.3 
 FROM "$PATH/TO/FILE/$file_name.csv" DELIMITER ',' CSV HEADER;`
 
 ##### IF THE ABOVE DOESN'T, THEN USE 
-`/COPY $ 
+`/COPY $table_name 
 FROM "$PATH/TO/FILE/$file_name.csv" DELIMITER ',' CSV HEADER;`
 
 =================================

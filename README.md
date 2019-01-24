@@ -69,3 +69,52 @@ FROM "$PATH/TO/FILE/$file_name.csv" DELIMITER ',' CSV HEADER;`
 `\d $database_name;`
 
 done.
+
+==================================
+#### NOTE!!!:
+If you are using zsh with iTerm2, YOU WILL HAVE TO REDO THE PROCESS AFTER INSTALLATION AS WELL AS SETTING `ANACONDA SCRIPT` IN THE `~/.zshrc` file. 
+
+I always use nano as such and here's a sample of how my `.zshrc` file looks like:
+
+`
+#test -e "${HOME}/.iterm2_shell_integration.zsh" && source "${HOME}/.iterm2_shell_integration.zsh"
+SHELL="zsh"
+
+# added by Anaconda3 5.3.1 installer
+# >>> conda init >>>
+# !! Contents within this block are managed by 'conda init' !!
+__conda_setup="$(CONDA_REPORT_ERRORS=false '/Users/jpro/anaconda3/bin/conda' shell.bash hook 2> /dev/null)"
+if [ $? -eq 0 ]; then
+    \eval "$__conda_setup"
+else
+    if [ -f "/Users/jpro/anaconda3/etc/profile.d/conda.sh" ]; then
+        . "/Users/jpro/anaconda3/etc/profile.d/conda.sh"
+        CONDA_CHANGEPS1=false conda activate base
+    else
+        \export PATH="/Users/jpro/anaconda3/bin:$PATH"
+    fi
+fi
+unset __conda_setup
+# <<< conda init <<<
+
+test -e "${HOME}/.iterm2_shell_integration.bash" && source "${HOME}/.iterm2_shell_integration.bash"
+
+# added by Anaconda3 2018.12 installer
+# >>> conda init >>>
+
+# !! Contents within this block are managed by 'conda init' !!
+__conda_setup="$(CONDA_REPORT_ERRORS=false '/anaconda3/bin/conda' shell.bash hook 2> /dev/null)"
+if [ $? -eq 0 ]; then
+    \eval "$__conda_setup"
+else
+    if [ -f "/anaconda3/etc/profile.d/conda.sh" ]; then
+        . "/anaconda3/etc/profile.d/conda.sh"
+        CONDA_CHANGEPS1=false conda activate base
+    else
+        \export PATH="/anaconda3/bin:$PATH"
+    fi
+fi
+unset __conda_setup
+# <<< conda init <<<
+
+export PATH="/usr/local/sbin:$PATH"`

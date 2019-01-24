@@ -29,7 +29,7 @@ Step-by-step instructions to install, launch and load PostgreSQL on Mac OS 10.3 
 
 =================================
 #### cd directory
-`cd $PATH/TO/Fdatabase_nameILE`
+`cd $PATH/TO/FILE/database_name`
 
 =================================
 #### Launch PostgreSQL

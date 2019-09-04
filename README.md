@@ -87,8 +87,8 @@ __conda_setup="$(CONDA_REPORT_ERRORS=false '/Users/jpro/anaconda3/bin/conda' she
 if [ $? -eq 0 ]; then
     \eval "$__conda_setup"
 else
-    if [ -f "/Users/jpro/anaconda3/etc/profile.d/conda.sh" ]; then
-        . "/Users/jpro/anaconda3/etc/profile.d/conda.sh"
+    if [ -f "/Users/$user/anaconda3/etc/profile.d/conda.sh" ]; then
+        . "/Users/$user/anaconda3/etc/profile.d/conda.sh"
         CONDA_CHANGEPS1=false conda activate base
     else
         \export PATH="/Users/jpro/anaconda3/bin:$PATH"
